@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Weather Forecast',
       theme: ThemeData(
+        primaryColor: Colors.red,
         scaffoldBackgroundColor: Colors.red,
       ),
       home: MyHomePage(),
@@ -84,7 +85,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: appBar,
       body: SafeArea(
-        child: SingleChildScrollView(
           child: Column(
             children: [
               Container(
@@ -157,7 +157,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
-      ),
     );
   }
 }
